@@ -1,0 +1,96 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----CONTAINTER----*/
+#main{
+    display: grid;
+    background-color:#341c02;
+    grid-template-columns: 2fr, 5fr;
+    grid-template-rows: 1fr, 2fr, 3fr, 6fr, 1fr;
+    grid-template-areas: 
+        "imgdiv header"
+        "nav tributeinfo "
+        "footer footer";
+    grid-gap: 2px;
+    
+}
+header{
+    grid-area: header;
+    font-size: 100px ;
+    background-image: url(/ResponsiveWebDesign/MyTributePage/img/scrol_banner-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-blend-mode:color-dodge;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 10px, 200px, 0px, 10px;
+}
+nav{
+    max-width: 100px;
+    grid-area: nav;
+    background-color:transparent ;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 50px;
+}
+#tribute-info{
+    max-width: 100%;
+    height: auto;
+    grid-area: tributeinfo;
+    justify-content: center;
+    background-image: url(/ResponsiveWebDesign/MyTributePage/img/scroll_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding-top: 200px;
+    padding-left: 120px;
+    padding-right: 80px;
+}
+#img-div{
+    grid-area: imgdiv;
+    background-color:#645403;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+}
+#tribute-link{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    padding: 5px;
+}
+footer{
+    grid-area: footer;
+    background-color:#645403 ;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    padding: 5px;
+}
+/* ----^CONTAINTER^----*/
+
+#image{
+    display: block;
+    max-width: 100%;
+    height:auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 1px;
+}
+#img-caption{
+    font-size: 10px;
+    margin: 1px;
+}
+h1{
+    font-family: 'Tangerine', cursive;
+    color:rgb(104, 88, 1);
+}
+h4{
+    font-size: 10px;
+}
